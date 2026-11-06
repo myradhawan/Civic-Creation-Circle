@@ -32,9 +32,6 @@ export const metadata: Metadata = {
     siteName: "Civic Creation Circle",
     type: "website",
   },
-  icons: {
-    icon: "/logo.png",
-  },
 };
 
 export default function RootLayout({

@@ -33,12 +33,21 @@ export function EventsTimeline({ items }: { items: typeof events }) {
                 event.image2 ? "sm:grid-cols-[1fr_1fr_1.1fr]" : "sm:grid-cols-[1fr_1.3fr]",
               )}
             >
-              <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+              <div
+                className={cn(
+                  "relative aspect-[4/3] overflow-hidden rounded-2xl",
+                  event.contain && "bg-[#0a2a63]",
+                )}
+              >
                 <Image
                   src={event.image}
                   alt={event.title}
                   fill
-                  className="object-cover transition-transform duration-500 hover:scale-105"
+                  className={cn(
+                    event.contain
+                      ? "object-contain"
+                      : "object-cover transition-transform duration-500 hover:scale-105",
+                  )}
                   sizes="(min-width: 640px) 30vw, 90vw"
                 />
               </div>

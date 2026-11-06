@@ -37,6 +37,10 @@ export const links = {
     njisjInterview: "https://www.instagram.com/dosocialjustice/reel/DZfe7sCzLp3/",
     civicsUnplugged: "https://www.instagram.com/civicsunplugged/p/DYn4Xqdm5dh/",
     vote16Njisj: "https://www.instagram.com/dosocialjustice/reel/DZK5rf8CLsO/",
+    patchOpEd:
+      "https://patch.com/new-jersey/livingston/livingston-op-ed-let-s-lower-local-voting-age-16-student-says",
+    petitionFliers: "https://www.instagram.com/p/Dcj4_jpTD5w/",
+    njisjSummit: "https://www.instagram.com/p/DeC2Z8mD2ov/?img_index=1",
   },
 };
 
@@ -44,7 +48,7 @@ export const impactStats = [
   { value: 2500, suffix: "+", label: "Civic Current subscribers" },
   { value: 50, suffix: "+", label: "Livingston High School members" },
   { value: 13, suffix: "", label: "Dedicated student leaders" },
-  { value: 8, suffix: "", label: "Speaker and advocacy events this year" },
+  { value: 3, suffix: "", label: "Chapters started" },
 ];
 
 export const homeImages = {
@@ -166,9 +170,66 @@ export const events = [
       "The June event brought CCC members before the Livingston Town Council to advocate for lowering the voting age to 16 in local and school board elections, sharing personal testimonies, research, and student-government election data alongside the NJ Institute for Social Justice.",
     image: "/images/press/02.jpg",
   },
+  {
+    date: "2026-09-12",
+    displayDate: "Sep",
+    title: "Club Fair",
+    description:
+      "Our table at the Livingston High School club fair drew a steady crowd all afternoon. By the end of the day, 60 students had signed up to join the CCC this year.",
+    image: "/images/events/08.jpg",
+  },
+  {
+    date: "2026-09-18",
+    displayDate: "Sep",
+    title: "Fall Interest Meeting",
+    description:
+      "25 students packed our first meeting of the year. We got to know our new members, walked through what the club does, and mapped out the issues and projects we'll take on this year.",
+    image: "/images/events/07.jpg",
+    contain: true,
+  },
+  {
+    date: "2026-09-27",
+    displayDate: "Sep",
+    title: "NJISJ Youth Summit Panel",
+    description:
+      "Our founder joined the opening panel, \"Building From the Ground Up,\" at the NJ Institute for Social Justice Youth Summit at Rutgers University. Over an hour alongside four other advocates from across the state, she spoke to more than 150 attendees as the youngest voice on the stage.",
+    image: "/images/events/09.jpg",
+  },
 ];
 
 export const press = [
+  {
+    slug: "patch-op-ed-voting-age",
+    title: "Patch Op-Ed: Lower the Local Voting Age to 16",
+    kicker: "Op-Ed",
+    description:
+      "An op-ed by a CCC student, published in Livingston Patch, arguing for lowering the voting age to 16 in local and school board elections. The piece makes the case that younger residents have a direct stake in local decisions and that earlier voting builds lasting participation.",
+    href: links.press.patchOpEd,
+    image: "/images/press/patch-op-ed.jpg",
+    contain: true,
+    cta: "Read on Patch",
+  },
+  {
+    slug: "njisj-youth-summit-panel",
+    title: "NJISJ Youth Power Summit Panel",
+    kicker: "Instagram",
+    description:
+      "An Instagram post from the NJ Institute for Social Justice on the 2026 Youth Power Summit opening panel, \"Building From the Ground Up,\" where our founder spoke alongside four other youth advocates.",
+    href: links.press.njisjSummit,
+    image: "/images/events/09.jpg",
+    cta: "View on Instagram",
+  },
+  {
+    slug: "vote16-petition-fliers",
+    title: "\"Our Voice, Our Vote\" Petition Fliers",
+    kicker: "Campaign",
+    description:
+      "An Instagram reel showing our Vote16 petition fliers around Livingston. The fliers ask residents to sign in support of letting 16- and 17-year-olds vote in local and school board elections.",
+    href: links.press.petitionFliers,
+    image: "/images/press/petition-fliers.jpg",
+    contain: true,
+    cta: "View on Instagram",
+  },
   {
     slug: "un-ecosoc-youth-forum",
     title: "UN ECOSOC Youth Forum",
@@ -177,6 +238,7 @@ export const press = [
       "Our founder took the CCC to the international stage, discussing the importance of grassroots engagement for real youth leadership at the UN ECOSOC Youth Forum of 2026, with hundreds of delegates and panelists in attendance. We urged multilateral spaces to get behind initiatives like ours in vulnerable communities, listen to youth concerns, and include them in acting upon them. The CCC is going global.",
     href: links.press.unEcosoc,
     video: true,
+    image: "/images/press/un-ecosoc.jpg",
     cta: "Watch on Drive",
   },
   {
